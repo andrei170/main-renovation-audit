@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website, SEO &amp; Google Ads Audit &middot; Main Renovation &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+</style></head><body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website, SEO &amp; Google Ads Audit &middot; Main Renovation LLC &middot; Loganville, Georgia</div>
+    <div class="sub">Prepared for Orvin Rivas &middot; 23 September 2026 &middot; AG1 Consulting</div>
+    <h1>You Told Us 30 To 40 Minutes. Your Website Tells Google The Entire State Of Georgia.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:52px">0</div>
+        <div class="score100">pages for any town you actually want to work in</div>
+      </div>
+      <div class="heroread">
+        <h2>Your site is built to win the wrong jobs, in the wrong places, and it cannot tell you when it does.</h2>
+        <p>Your structured data declares <b>&ldquo;areaServed: State of Georgia.&rdquo;</b> Georgia is roughly 250 miles
+        across. You told Ramses you want jobs <b>30 to 40 minutes away.</b></p>
+        <p><b>And you are about to spend money on Google Ads with no conversion tracking installed at all.</b></p>
+        <div class="tag">Every page and the sitemap read 23 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">First &mdash; What You Have That Most Roofers Do Not</div>
+    <div class="win">
+      <div class="lab">This is a better foundation than it looks</div>
+      <ul>
+        <li><b>Proper RoofingContractor structured data.</b> Most roofing sites have none. Yours declares your name,
+        phone, email, logo, social profiles and five service types.</li>
+        <li><b>Tappable phone numbers on every service page</b> &mdash; three on commercial, four on residential.</li>
+        <li><b>Written meta descriptions</b> on the home, commercial and residential pages.</li>
+        <li><b>A dedicated estimate page</b> with a form on it. A separate conversion page is the right instinct.</li>
+        <li><b>Real commercial credentials</b> &mdash; Conklin training in spray polyurethane foam, roof coatings and
+        single-ply membrane, plus GAF certification on the residential side, and an A+ BBB rating.</li>
+        <li><b>Insurance-claim work is already one of your declared services</b> &mdash; which in Georgia, with its hail
+        and storm seasons, is the highest-value thing on your list.</li>
+      </ul>
+      <p style="margin-top:10px"><b>Nothing here needs to be thrown away.</b> Everything below is about pointing it at
+      the right map.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; You Want To Buy Google Ads. Nothing On Your Site Is Measured.</div>
+    <div class="code">
+Tracking installed on mainrenovationllc.com today:
+
+  Google Analytics 4        <span class="ph">not found</span>
+  Google Tag Manager        <span class="ph">not found</span>
+  Google Ads conversion tag <span class="ph">not found</span>
+  Meta pixel                <span class="ph">not found</span>
+  Call tracking             <span class="ph">not found</span>
+  Microsoft Clarity         <span class="ph">not found</span>
+
+  Nothing. Not one tag on any page.
+    </div>
+    <div class="flag">
+      <div class="lab">This is not a small thing &mdash; it is the difference between advertising and donating</div>
+      <p><b>Modern Google Ads bidding works by learning which clicks turn into customers.</b> You give it a conversion
+      signal &mdash; a form submitted, a call placed &mdash; and it spends your budget chasing more people who look like
+      the ones who converted. That learning <b>is</b> the product.</p>
+      <p><b>With no conversion tag there is no signal.</b> Google can only optimise toward clicks, because clicks are
+      the only thing it can see. You would be paying for traffic and hoping, and at the end of the month nobody could
+      tell you which keyword produced a roof and which produced nothing.</p>
+      <p>There is a second cost that is easy to miss. <b>Most roofing enquiries are phone calls, not forms.</b> Without
+      call tracking, even a perfectly-run campaign would look like it was failing, because the conversions would be
+      happening on your phone where no system can count them.</p>
+      <p><b>This is the first thing to fix and it is not a big job.</b> It is tags, not a rebuild, and it must be done
+      before a single dollar goes into Google Ads &mdash; not after.</p>
+      <p class="tag">We checked the served HTML of all four content pages for GA4, Tag Manager, Google Ads, Meta, CallRail
+      and Clarity. A static read cannot prove absence with total certainty, but with no tag-manager container present
+      there is nowhere for a tag to hide, and whoever built the site can confirm it in a minute.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Your Website Is Fighting Your Own Business Rule</div>
+    <div class="code">
+From your own structured data:
+
+  "areaServed": {
+    "@type": "State",
+    "name": <span class="ph">"Georgia"</span>        &lt;-- the entire state
+  }
+
+  "address": {
+    "addressRegion": "GA",
+    "addressCountry": "US"
+                              <span class="ph">no street, no city, no postal code</span>
+  }
+
+What you told Ramses you want:
+
+  Jobs <span class="ok">30 to 40 minutes</span> from base.
+    </div>
+    <div class="warn">
+      <div class="lab">Two separate problems, and they compound</div>
+      <p><b>The first is reach.</b> You are telling Google you serve everywhere from Chattanooga to the Florida line.
+      Google will happily show you to somebody four hours away, and you will pay for that click, qualify the lead, and
+      turn the job down. In paid search you pay for the wrong enquiry exactly as much as the right one.</p>
+      <p><b>The second is placement.</b> Your address block has <b>no city and no street</b>. Local search ranking leans
+      heavily on where a business actually is. A contractor with no city in their data is difficult for Google to place
+      anywhere in particular &mdash; so it places them weakly everywhere, which is the worst outcome for somebody who
+      wants to dominate a tight radius.</p>
+      <p><b>Your radius rule is not a limitation. It is a strategy, and a good one.</b> A 30-minute service area is
+      cheaper to advertise in, cheaper to rank in, and far more profitable to run, because your crews are not spending
+      two hours a day in traffic. <b>The site simply does not know about it.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; You Market Atlanta And Hide Loganville</div>
+    <div class="code">
+Town names in the visible copy across your whole site:
+
+  Atlanta        <span class="ok">12</span> mentions
+  Loganville     <span class="ph">1</span>  mention   (one line, on the residential page)
+
+  Every other town you could reach:  <span class="ph">0</span>
+
+Loganville appears in your meta descriptions and one
+title tag &mdash; and almost nowhere a customer can read it.
+    </div>
+    <div class="flag">
+      <div class="lab">Atlanta is probably outside the radius you just described</div>
+      <p>You are based in Loganville, in Walton County. <b>Downtown Atlanta is around 35 miles west</b> &mdash; which in
+      Atlanta traffic is routinely an hour each way, well beyond the 30 to 40 minutes you set as your rule.</p>
+      <p><b>Atlanta is also one of the most expensive roofing markets in the South to advertise in.</b> Every national
+      brand, every storm-chaser and every private-equity-backed roofer bids on Atlanta. It is the most costly ground you
+      could possibly have chosen, and it is ground you have said you do not want the work from.</p>
+      <p><b>Meanwhile the towns inside your radius have almost no serious competition</b>, because everyone else is also
+      pointing at Atlanta.</p>
+      <p><b>The towns to build for &mdash; for you to confirm, not us:</b> Snellville, Monroe, Grayson, Dacula,
+      Lawrenceville, Lilburn, Conyers, Covington, Stone Mountain, Lithonia, Between and Walnut Grove. <b>You know your
+      real drive times better than any map does</b>, and the list we build should be yours, not ours.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; Four Pages Of Content, And The Commercial One Is 212 Words</div>
+    <div class="code">
+Every page you publish:
+
+  <span class="ok">/</span>                          Home           <span class="ok">592</span> words   1 form
+  <span class="ok">/residential-roofing.html</span>   Residential    <span class="ok">528</span> words   1 form
+  <span class="ok">/commercial-roofing.html</span>    Commercial     <span class="ph">212</span> words   <span class="ph">0 forms</span>
+  <span class="ok">/estimate.html</span>              Estimate       <span class="ok">180</span> words   1 form
+  <span class="ph">/privacy-policy.html</span>        Legal
+  <span class="ph">/terms.html</span>                 Legal
+
+  Location pages:               <span class="ph">none</span>
+  Storm / insurance claim page: <span class="ph">none</span>
+  Roof repair page:             <span class="ph">none</span>
+    </div>
+    <div class="warn">
+      <div class="lab">The gaps are all on your highest-value services</div>
+      <ul>
+        <li><b>Commercial is 212 words with no enquiry form on it.</b> You are Conklin-trained in three commercial
+        systems &mdash; that is a genuine specialism most residential roofers cannot offer, and it gets a third of a page
+        and no way to enquire.</li>
+        <li><b>Insurance-claim roofing is in your structured data as a service and has no page.</b> In a hail state,
+        &ldquo;will my insurance cover this&rdquo; is one of the most valuable questions a roofer can answer, and it is
+        where the trust is won.</li>
+        <li><b>Roof repair has no page</b>, despite being listed as a service. Repair searches are how you get in front
+        of somebody two years before they need a replacement.</li>
+        <li><b>Your estimate page has no meta description.</b> That is the page you want people landing on from an ad.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">No tags of any kind, on any page</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Ads readiness</div><div class="sc">Cannot measure or optimise a single campaign today</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Location targeting</div><div class="sc">Whole state declared; no city in your address data</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Local pages</div><div class="sc">No page for any town in your service radius</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Site depth</div><div class="sc">4 content pages; no repair, storm or claims page</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Commercial page</div><div class="sc">212 words and no enquiry form</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">On-page basics</div><div class="sc">Titles and meta present, but none on the estimate page</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Phone access</div><div class="sc">Tappable numbers on both service pages</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">Proper RoofingContractor markup &mdash; rare in this trade</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Credentials</div><div class="sc">Conklin systems, GAF certified, A+ BBB rating</div></div><div class="badge gA">A</div></div>
+    </div>
+    <div class="tag" style="margin-top:12px">The bottom two rows are why this is worth doing. The credentials and the markup are already there &mdash; the site is just aimed at the wrong map with the meter switched off.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>Install conversion tracking and call tracking first.</b> GA4, a Google Ads conversion action, and call
+      tracking so phone enquiries are counted. <b>Before any ad spend, not after.</b> Nothing else on this list can be
+      judged without it.</li>
+      <li><b>Fix the service area in your data.</b> Replace &ldquo;State of Georgia&rdquo; with the actual towns you
+      will drive to, and put your city into your address markup so Google can place you.</li>
+      <li><b>Build a page for each town in your radius</b> &mdash; your list, confirmed by you, starting with the
+      closest and the wealthiest housing stock rather than the biggest.</li>
+      <li><b>Write the three missing service pages</b>: roof repair, storm damage and insurance claims. The claims page
+      is the most valuable page you do not currently have.</li>
+      <li><b>Fix the commercial page</b> &mdash; put the Conklin systems, the specification detail and an enquiry form
+      on it. It is your highest-margin work and your thinnest page.</li>
+      <li><b>Then run Google Ads</b>, on a tight radius around your own towns, with the tracking already live so you can
+      see cost per booked job from week one rather than guessing in month three.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>You already decided you want tight, local, profitable work. Your website never got told.</h2>
+    <p>Put the meter on, put your own towns in, and stop paying Atlanta prices for jobs you would turn down anyway.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 23 September 2026<br><br>
+    For Orvin Rivas, Main Renovation LLC, Loganville, Georgia. <b>Every statement about the website &mdash; the six URLs
+    in the published sitemap, the word counts and form counts on each page, the tappable telephone links, the title tags
+    and meta descriptions including the absent one on the estimate page, the RoofingContractor structured data with its
+    declared services, its &ldquo;areaServed: State of Georgia&rdquo; value and its address block containing only
+    addressRegion and addressCountry, the counts of &ldquo;Atlanta&rdquo; and &ldquo;Loganville&rdquo; in visible copy,
+    and the absence of any analytics, tag manager, advertising tag, pixel or call-tracking code &mdash; was read directly
+    from mainrenovationllc.com's own served pages and sitemap on 23 September 2026 and is reproducible.</b> <b>Items
+    recorded as &ldquo;not found&rdquo; describe what a static read of the served HTML returned on that date and must not
+    be read as proof of absence; content injected after page load may not appear in a static read, and this should be
+    confirmed with whoever built or manages the site before being relied on.</b> <b>The Conklin training, GAF
+    certification and A+ BBB rating are as reported on third-party listings and the company's own materials; AG1 has not
+    verified them with Conklin, GAF or the Better Business Bureau, and nothing here is a claim about whether any
+    certification is current.</b> <b>The 30-to-40-minute service preference is as reported to AG1 by the company and has
+    not been independently confirmed. The approximate distance between Loganville and Atlanta, and the towns listed as
+    candidates within a service radius, are general geographic observations offered for discussion only &mdash; they are
+    not drive-time measurements, were not calculated from traffic data, and the final service-area list should be the
+    company's own.</b> <b>Statements about how Google Ads bidding uses conversion data, and about the relative cost and
+    competitiveness of advertising in Atlanta, are our commercial judgement and general industry reasoning; no keyword,
+    cost-per-click, auction, competitor bid or search volume has been measured for this or any market, and Google's
+    products and policies are Google's and change without notice.</b> <b>No Google Business Profile, review count, map
+    position, ranking or competitor has been measured or assessed. The company's revenue, job volume, pricing, margins,
+    staffing, crew count and advertising spend are unknown to us and nothing here estimates or asserts any of them.</b>
+    <b>⚠ No number of enquiries, calls, leads, booked jobs, rankings, map positions or revenue outcomes is promised,
+    forecast or guaranteed anywhere in this document, and nothing here should be read as such.</b> Nothing here is a
+    comment on the competence, licensing, insurance or workmanship of this or any other business, and nothing here is
+    legal, insurance, financial or business advice. Company, manufacturer and scheme names are used for identification
+    only and belong to their respective owners. The grades and any judgements are AG1's own editorial opinion.
+  </div>
+</footer>
+</body></html>
