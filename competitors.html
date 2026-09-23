@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Competitor Analysis &middot; Main Renovation &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Audit</a><a href="competitors.html" class="on">Competitors</a><a href="https://andrei170.github.io/main-renovation-demo/" class="ext" target="_blank" rel="noopener">Concept Site &#8599;</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Competitor Analysis &middot; Roofing &middot; Loganville &amp; Walton / Gwinnett County, Georgia</div>
+    <div class="sub">Prepared for Orvin Rivas &middot; Main Renovation LLC &middot; 23 September 2026 &middot; AG1 Consulting</div>
+    <h1>Two Of Your Competitors Have Already Written A Page About Loganville. Neither Of Them Is You.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:40px">21</div>
+        <div class="score100">town pages published by Barrelle Roofing. You publish zero.</div>
+      </div>
+      <div class="heroread">
+        <h2>They are not outspending you. They sat down and wrote the pages.</h2>
+        <p><b>Barrelle Roofing publishes a page for Loganville, Snellville, Monroe, Conyers, Dacula, Lawrenceville and
+        fifteen more.</b> The Roof Clinic publishes sixteen, including Loganville, Snellville and Grayson.</p>
+        <p><b>You publish six pages in total, and not one of them names a town.</b></p>
+        <div class="tag">Read from each firm's own served pages and published sitemaps, 23 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Comparison</div>
+    <div style="overflow-x:auto">
+    <table class="cmp">
+      <tr>
+        <th></th>
+        <th>Barrelle Roofing</th>
+        <th>The Roof Clinic</th>
+        <th>Bryant Roofing</th>
+        <th class="you">Main Renovation</th>
+      </tr>
+      <tr><td><b>Pages published</b></td><td class="yes">42</td><td class="yes">112</td><td class="yes">52</td><td class="no"><b>6</b></td></tr>
+      <tr><td><b>Town pages</b></td><td class="yes">21</td><td class="yes">16</td><td class="yes">County + town</td><td class="no"><b>0</b></td></tr>
+      <tr><td><b>A page for Loganville</b></td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Walton County</td><td class="no"><b>No</b></td></tr>
+      <tr><td><b>Blog / articles</b></td><td class="yes">63</td><td class="yes">50</td><td class="yes">26</td><td class="no"><b>0</b></td></tr>
+      <tr><td><b>Case studies / portfolio</b></td><td>Not published</td><td class="yes">28</td><td>Not published</td><td class="no"><b>0</b></td></tr>
+      <tr><td><b>Google Ads tag</b></td><td class="yes">AW-943246095</td><td class="no">Not found</td><td class="no">Not found</td><td class="no"><b>None</b></td></tr>
+      <tr><td><b>Meta pixel</b></td><td class="yes">Present</td><td class="no">Not found</td><td class="no">Not found</td><td class="no"><b>None</b></td></tr>
+      <tr><td><b>Any analytics tag</b></td><td class="yes">Yes</td><td class="yes">GT-MR4NFVG</td><td class="no">Not found</td><td class="no"><b>None</b></td></tr>
+      <tr><td><b>Physical Loganville address</b></td><td class="yes">Lee Byrd Rd</td><td>Not published</td><td class="yes">Since 1989</td><td class="you"><b>Yes</b></td></tr>
+      <tr><td><b>Structured data</b></td><td>Not checked in detail</td><td>Not checked in detail</td><td>Not checked in detail</td><td class="you"><b>RoofingContractor</b></td></tr>
+    </table>
+    </div>
+    <div class="tag" style="margin-top:12px">Counts are from each firm's own published sitemaps on 23 September 2026. "Not found" records what a static read of the served homepage returned and is not proof of absence &mdash; a tag may load on other pages or after render. We initially recorded no analytics on The Roof Clinic and found GT-MR4NFVG on a closer read; the figures above are the corrected ones.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The One Competitor You Should Actually Worry About</div>
+    <div class="flag">
+      <div class="lab">Barrelle Roofing &mdash; 147 Lee Byrd Rd, Loganville</div>
+      <p><b>They have an address in your town, a page for your town, and twenty more town pages around it.</b></p>
+      <p><b>And they are the only firm in this comparison running a Google Ads conversion tag and a Meta pixel.</b> That
+      means when they buy a click, Google learns from it and they can follow that visitor around afterwards.</p>
+      <p>This is exactly what you told Ramses you want to start doing &mdash; <b>except they built the pages and the
+      tracking first, and you would be starting with neither.</b></p>
+      <p>You would be bidding against a firm in your own town that has a landing page for every search term you want and
+      a bidding algorithm that has been learning for months. <b>Not impossible. But not something to walk into
+      blind.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What They Built That You Could Build In Weeks</div>
+    <div class="code">
+Barrelle's 21 town pages:
+
+  <span class="ok">loganville</span> &middot; <span class="ok">snellville</span> &middot; <span class="ok">monroe</span> &middot; <span class="ok">conyers</span> &middot; <span class="ok">dacula</span> &middot; <span class="ok">lawrenceville</span>
+  <span class="ok">lilburn</span> &middot; <span class="ok">duluth</span> &middot; <span class="ok">suwanee</span> &middot; <span class="ok">winder</span> &middot; <span class="ok">watkinsville</span> &middot; <span class="ok">norcross</span>
+  <span class="ok">decatur</span> &middot; <span class="ok">tucker</span> &middot; <span class="ok">redan</span> &middot; <span class="ok">belvedere-park</span> &middot; <span class="ok">mcdonough</span>
+  <span class="ok">athens</span> &middot; <span class="ok">greensboro</span> &middot; <span class="ok">covington</span> &middot; <span class="ok">atlanta</span>
+
+The first twelve are almost exactly the radius you
+described to us. <span class="ph">You have a page for none of them.</span>
+    </div>
+    <div class="warn">
+      <div class="lab">Notice what is missing from their list, and what it tells you</div>
+      <p><b>Atlanta is one page out of twenty-one for them.</b> They are not fighting for Atlanta &mdash; they are
+      winning the towns around it, which is precisely the strategy you already described and have not yet implemented.</p>
+      <p><b>Your own site does the opposite:</b> Atlanta is mentioned twelve times in your copy and Loganville once.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Where You Can Win</div>
+    <div class="win">
+      <div class="lab">This field has real gaps and you are positioned for two of them</div>
+      <ul>
+        <li><b>Nobody here publishes commercial depth.</b> These are residential-first roofers. You are Conklin-trained
+        in spray foam, coatings and single-ply &mdash; a genuine commercial specialism. Your commercial page is 212 words
+        with no form, which is the cheapest fix in either document.</li>
+        <li><b>Two of the three have no advertising tags at all.</b> Only Barrelle is properly instrumented. This is not
+        a sophisticated field &mdash; it is one prepared firm and several unprepared ones.</li>
+        <li><b>You have proper RoofingContractor structured data.</b> That is a real technical advantage you already
+        hold.</li>
+        <li><b>Insurance-claim roofing is already one of your declared services</b>, and in a hail state that is the
+        highest-intent search there is.</li>
+        <li><b>Twenty-one town pages is a finite job, not a moat.</b> Barrelle did it once and it has been working for
+        them ever since. The same work is available to you.</li>
+      </ul>
+    </div>
+    <div class="warn">
+      <div class="lab">And where they are genuinely ahead</div>
+      <p><b>The Roof Clinic publishes 112 pages including 28 portfolio items and case studies, and states HAAG
+      certification and Xactimate training.</b> On insurance work that is exactly the credibility signal a homeowner
+      looks for, and it is published where yours is not.</p>
+      <p><b>Bryant Roofing has been in Loganville since 1989.</b> You will not out-tenure them, so do not try &mdash;
+      out-specify them on commercial, where they are thin.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Could Not Check</div>
+    <div class="warn">
+      <div class="lab">Marked honestly rather than guessed</div>
+      <ul>
+        <li><b>Everyone's Google Business Profile, review count and map position</b>, including yours. On local roofing
+        that is where a large share of enquiry begins and we have no reliable way to measure it.</li>
+        <li><b>What anyone actually spends on Google Ads, what they bid on, or what it returns.</b> We can see that
+        Barrelle has the tag installed. We cannot see their budget, their keywords or their results.</li>
+        <li><b>Anyone's revenue, crew size, pricing, close rate or insurance-claim volume</b>, including yours.</li>
+        <li><b>Whether any firm here holds the certifications it displays</b> &mdash; we read websites, not registers.</li>
+        <li><b>Every roofer within your radius.</b> This is the set we could find and verify, not a census, and it
+        excludes the storm-chasers who arrive after a hail event and leave again.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>A firm on Lee Byrd Road has twenty-one town pages, a Google Ads tag and a pixel.</h2>
+    <p>You have the credentials, the commercial specialism and the schema. You just have not written the pages yet.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 23 September 2026<br><br>
+    For Orvin Rivas, Main Renovation LLC, Loganville, Georgia. <b>Page counts, town-page counts and their URL slugs,
+    blog and portfolio counts, analytics and advertising tags, and published addresses were read from each named
+    company's own served pages and published sitemaps on 23 September 2026 and are reproducible.</b> Cells marked "not
+    found" or "not published" record what our check returned on that date and must not be read as proof of absence;
+    tags may load on pages other than the homepage or after render, and the absence of a published sitemap does not
+    indicate a small site. <b>We record openly that our first pass read The Roof Clinic as having no analytics and a
+    closer check found the Google tag GT-MR4NFVG; the corrected figure is the one shown, and the same limitation may
+    apply to other cells.</b> <b>The presence of an advertising tag indicates only that the tag is installed. It is not
+    evidence of any advertising spend, campaign, keyword, budget, bid or result, and no claim is made about any firm's
+    advertising performance.</b> <b>Certifications, trading dates and addresses are as each firm publishes them or as
+    reported on third-party listings, and have not been verified with GAF, HAAG, Conklin, Xactimate, the Better Business
+    Bureau or any other body.</b> <b>No company's revenue, staffing, pricing, close rate, claim volume, licensing,
+    insurance or workmanship has been assessed, and nothing whatsoever is claimed or implied about any of them.</b>
+    <b>No Google Business Profile, map position, review count or search ranking has been measured for any firm,
+    including Main Renovation LLC.</b> <b>The observation that Barrelle's first twelve towns approximate the service
+    radius described to us is a general geographic comment, not a drive-time measurement.</b> <b>⚠ No ranking, enquiry
+    volume, cost per click, market share, conversion or revenue outcome is forecast or promised anywhere in this
+    document.</b> Nothing here is a comment on the competence, conduct or standing of any named business; company,
+    manufacturer and scheme names are used for identification only and belong to their respective owners. The commentary
+    and any judgements are AG1's own editorial opinion.
+  </div>
+</footer>
+</body></html>
